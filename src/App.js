@@ -15,18 +15,17 @@ function App() {
        
      </div>
   );
-}
-
-function Schedule(){
-  const [scholar, setSchedule] = useState([]);
-  useEffect( () =>{
-    fetch('https://limitless-lowlands-32082.herokuapp.com/schedule')
-    .then(res=>res.json())
-    .then(data => console.log(data))
-  }, [])
-  return(
-    <div><h5>aaaaaaaaaaaaaaaaa </h5></div>
- )
 };
+// function Schedule(){
+//   const [scholar, setSchedule] = useState([]);
+//   useEffect( () =>{
+//     fetch('https://limitless-lowlands-32082.herokuapp.com/schedule')
+//     .then(res=>res.json())
+//     .then(data => console.log(data))
+//   }, [])
+//   return(
+//     <div><h5>aaaaaaaaaaaaaaaaa </h5></div>
+//  )
+// };
 
 export default App;
