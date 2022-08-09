@@ -1,0 +1,18 @@
+.header{
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.orgName{
+    color: antiquewhite;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+}
