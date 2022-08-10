@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import './Information.css'
+import './Information.css';
 
 const Information = () => {
     const [schedule, setSchedule] = useState([]);
@@ -11,13 +11,34 @@ const Information = () => {
     }, [])
     return (
         <div className='container'>
-            <div className='info-container'>
-                <h3>Scholar Information:</h3>
-                 {schedule.map(scheduleInfo =><Information key={schedule.id}></Information>)}
-
+            <div >
+                <h2 className='info-heading'>Scholar Information</h2>
+                <div className='info-container'>
+                {
+                     schedule.map(infos=> <Info infos={infos} key={infos._id} ></Info>)
+                }
+                </div>
             </div>
         </div>
     );
 };
+function Info(props){
+    return(
+        <div className='information'>
+            <img src={props.infos.userImage} alt="" />
+            <h3>Scholar Name: {props.infos.scholarName}</h3>
+            <h4>Id: {props.infos._id}</h4>
+            <h4>Phone: {props.infos.phone}</h4>
+            <h4>City: {props.infos.city}</h4>
+            
+            {/* <h4>Upazila: {props.infos.upazila}</h4> */}
+            {/* <h4>Post Code: {props.infos.postCode}</h4> */}
+            <h4>Status: {props.infos.status}</h4>
+            {/* <h4>Scholar Email: {props.infos.scholarEmail}</h4> */}
+            
+            
+        </div>
+    )
+}
 
 export default Information;
