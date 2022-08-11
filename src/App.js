@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Information from './components/Information/Information';
@@ -9,7 +10,13 @@ function App() {
    return (
      
      <div >
-       <Header></Header>
+      <Routes>
+        <Route> path="/ element={<Header></Header>}"</Route>
+        <Route> path="/ element={}" </Route>
+        <Route> path="/ element={}" </Route>
+        <Route> path="/ element={}" </Route>
+      </Routes>
+       
        <Information></Information>
        
        
