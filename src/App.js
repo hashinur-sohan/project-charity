@@ -1,23 +1,28 @@
 import { useEffect, useState } from 'react';
-import { Routes } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
 import Information from './components/Information/Information';
+import Home from './components/Home/Home';
+import ScholarSchedule from './components/ScholarSchedule/ScholarSchedule';
+import Donation from './components/Donation/Doantion';
+
 
 
 
 function App() {
    return (
      
-     <div >
+     <div className='App'>
+      {<Header></Header>}
       <Routes>
-        <Route> path="/ element={<Header></Header>}"</Route>
-        <Route> path="/ element={}" </Route>
-        <Route> path="/ element={}" </Route>
-        <Route> path="/ element={}" </Route>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/information" element={<Information/>} />
+        <Route path="/scholar_schedule" element={<ScholarSchedule/>}/>
+        <Route path="/donation" element={<Donation/>}/>
       </Routes>
        
-       <Information></Information>
+       
        
        
      </div>
