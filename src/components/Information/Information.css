@@ -1,16 +1,14 @@
-.container{
-   
-}
+
 .info-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
 }
 .information{
-    text-align: center;
+    
     position: relative;
-    height: 350px;
-    width: 350px;
+    height: 380px;
+    width: 380px;
     margin: 10px;
     padding: 10px;
     border: 1px solid gray;

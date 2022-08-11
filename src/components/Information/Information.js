@@ -15,7 +15,7 @@ const Information = () => {
                 <h2 className='info-heading'>Scholar Information</h2>
                 <div className='info-container'>
                 {
-                     schedule.map(infos=> <Info infos={infos} key={infos._id} ></Info>)
+                     schedule.map(infos=> <Info key={infos._id} infos={infos}></Info>)
                 }
                 </div>
             </div>
@@ -29,7 +29,7 @@ function Info(props){
             <h3>Scholar Name: {props.infos.scholarName}</h3>
             <h4>Id: {props.infos._id}</h4>
             <h4>Phone: {props.infos.phone}</h4>
-            <h4>City: {props.infos.city}</h4>
+            {/* <h4>City: {props.infos.city}</h4> */}
             
             {/* <h4>Upazila: {props.infos.upazila}</h4> */}
             {/* <h4>Post Code: {props.infos.postCode}</h4> */}
